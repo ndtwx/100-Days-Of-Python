@@ -19,6 +19,7 @@ v = lower_names.count("v")
 e = lower_names.count("e")
 second_digit = l + o + v + e 
 
+#Combine the number in string first then convert back to integer
 score = str(first_digit) + str(second_digit)
 score = int(score)
 
