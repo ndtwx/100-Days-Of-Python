@@ -7,6 +7,8 @@ combined_name = name1 + name2
 
 # make all the letters to lower case
 lower_names = combined_name.lower()
+
+# Count the letters within the name
 t = lower_names.count("t")
 r = lower_names.count("r")
 u = lower_names.count("u")
@@ -23,6 +25,7 @@ second_digit = l + o + v + e
 score = str(first_digit) + str(second_digit)
 score = int(score)
 
+#Compare the score 
 if score < 10 or score > 90:
     print(f"Your score is {score}, you go together like coke and mentos.")
 elif score > 40 and score < 50:
