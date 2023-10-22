@@ -23,15 +23,15 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 print("WELCOME TO THE TREASURE ISLAND GAME!.")
 print("YOUR MISSION IS TO FIND THE TREASURE!.\n")
 print("******************************************************************************")
-choice1 = input('Which path would you like to take? Type "left" or "right"\n')
+choice1 = input('Which path would you like to take? Type "left" or "right"\n').lower()
 if choice1 == "left":
     print("You chose the left path and reach the ocean.")
     print("******************************************************************************")
-    choice2 = input('Would you like to swim over or wait for a boat? Type "swim" or "wait"\n')
+    choice2 = input('Would you like to swim over or wait for a boat? Type "swim" or "wait"\n').lower()
     if choice2 == "wait":
         print("******************************************************************************")
         print("You chose to wait for the boat and reach the island safely")
-        choice3 = input('Which door would you like to open. Type "red","yellow" or "blue"\n')
+        choice3 = input('Which door would you like to open. Type "red","yellow" or "blue"\n').lower()
         if choice3 == "red":
             print("******************************************************************************")
             print("You got burn by the fire and died")
