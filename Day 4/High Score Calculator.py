@@ -8,6 +8,7 @@ for n in range(0, len(student_scores)):
 
 highest_score = 0
 
+# Check if the current highest score is higher than the next score. If yes, replace the current highest score
 for score in student_scores:
   if score > highest_score:
     highest_score = score
