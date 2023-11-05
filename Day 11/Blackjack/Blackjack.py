@@ -39,7 +39,7 @@ def compare(user_score, computer_score):
     """Compare the score between the user and computer to determine the winner"""
     
     if user_score > 21 and computer_score > 21:
-        return "IT'S A DRAW!"
+        return "BOTH WENT OVER! IT'S A DRAW!"
 
     if user_score == computer_score:
         return "IT'S A DRAW!"
