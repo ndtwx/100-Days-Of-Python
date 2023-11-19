@@ -13,7 +13,7 @@ def format_data(account):
   name = account["name"]
   description = account["description"]
   country = account["country"]
-#   print(f'{name}: {account["follower_count"]}')
+# print(f'{name}: {account["follower_count"]}')
   return f"{name}, a {description}, from {country}"
 
 # Check if user is correct.
