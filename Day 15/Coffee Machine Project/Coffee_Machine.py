@@ -1,4 +1,6 @@
 from data import MENU, resources, profit
+
+
 # TODO:4. Check resources sufficient?
 def check_resources(order_ingredients):
     for item in order_ingredients:
@@ -7,15 +9,17 @@ def check_resources(order_ingredients):
             return False
     return True
 
+
 # TODO:5. Process coins.
 def process_coins():
     """Returns the total calculated from coins inserted."""
     print("Please insert coins.")
     total = int(input("How many 1 dollar?:")) * 1.00
-    total += int(input("How many 50 cents:"))* 0.50
+    total += int(input("How many 50 cents:")) * 0.50
     total += int(input("How many 20 cents:")) * 0.20
     total += int(input("How many 10 cents:")) * 0.10
     return total
+
 
 # TODO:6. Check transaction successful?
 def check_transaction(money_received, drink_cost):
@@ -30,6 +34,7 @@ def check_transaction(money_received, drink_cost):
         print("Sorry that's not enough money. Money refunded.")
         return False
 
+
 # TODO:7. Make Coffee.
 def make_coffee(drink_name, order_ingredients):
     """Deduct the required ingredients from the resources."""
@@ -37,6 +42,7 @@ def make_coffee(drink_name, order_ingredients):
         resources[item] -= order_ingredients[item]
     print(f"Here is your {drink_name} ☕️. Enjoy!")
     print("-----------------------------------")
+
 
 is_on = True
 
