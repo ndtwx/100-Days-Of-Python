@@ -1,0 +1,29 @@
+The reason why Object Oriented Programming is called that is because it's trying to model a real world object.
+
+Example:
+To model a waiter. there's probably two things we need to think about:
+1. what it has (attribute)
+2. what it does (method)
+
+In terms of what it has (attribute), it might have variables like:
+
+is_holding_plate = True (Is it holding a plate, true or false?)
+tables_responsible = [4, 5,6] ( Which tables is it responsible for? Maybe table 4, 5 and 6.)
+
+you can pretty much see that the attributes is basically a variable ASSOCIATED with a object
+
+In terms of what it does (method):
+
+def take_order(table, order): (Take an order to the chef)
+def take_payment(amount): (They also need to take payments)
+
+you can pretty much see that the method is basically a function ASSOCIATED with a object
+
+The two most important things that make up an object: its attributes and its
+methods.
+--------------------------------------------------------------------------------------------
+we can actually have multiple objects generated from the same type.
+
+Example:
+    After constructing the object's attribute and method, we can generate multiple
+    version of the same object. We can have henry(object) who is a waiter(class) and betty who is a waiter too
