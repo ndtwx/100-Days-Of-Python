@@ -29,5 +29,4 @@ def generate_phonetic():
     else:
         print(new_list)
 
-
 generate_phonetic()
