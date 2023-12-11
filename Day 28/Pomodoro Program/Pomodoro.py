@@ -72,6 +72,7 @@ timer_label.grid(column=1, row=0)
 
 checkmark_label = Label(font=(FONT_NAME, 15, "bold"), fg=GREEN, bg=YELLOW)
 checkmark_label.grid(column=1, row=3)
+
 # Creating the image and text on the image
 canvas = Canvas(width=200, height=224, bg=YELLOW, highlightthickness=0)
 tomato_img = PhotoImage(file="tomato.png")
