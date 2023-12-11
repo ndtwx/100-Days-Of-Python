@@ -41,7 +41,7 @@ new dictionary which we will call it new_data and it is going to be a nested dic
 
 
 def save():
-    website = website_entry.get()
+    website = website_entry.get().title()
     email = email_entry.get()
     password = password_entry.get()
     new_data = {
@@ -80,7 +80,7 @@ def save():
 
 # ---------------------------- FIND PASSWORD ------------------------------- #
 def find_password():
-    website = website_entry.get()
+    website = website_entry.get().title()
     try:
         with open("data.json") as data_file:
             data = json.load(data_file)
@@ -90,7 +90,9 @@ def find_password():
         if website in data:
             email = data[website]["email"]
             password = data[website]["password"]
+            pyperclip.copy(password)
             messagebox.showinfo(title=website, message=f"Email: {email}\nPassword: {password}")
+
         else:
             messagebox.showinfo(title=website, message=f"No details for {website} exist")
 
