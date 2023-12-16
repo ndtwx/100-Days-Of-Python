@@ -1,0 +1,20 @@
+
+<!-- Tells the browser which HTML version the file is written in -->
+<!DOCTYPE html>
+<!-- The root of the document, the body of the html-->
+<html lang="en"> 
+<!-- A place for important information that will help render the website correctly
+(does not include any content like text or images)-->
+    <head>
+        <!-- meta tag for the character set encoding of the webpage-->
+        <meta charset="UTF-8">
+        <title>My website</title>
+        <!-- Define how the website should be displayed -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <!-- This is where all the content of the website goes-->
+    <body>
+        <h1>Hello World!</h1>
+    </body>
+</html>
