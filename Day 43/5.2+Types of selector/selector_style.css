@@ -1,0 +1,45 @@
+ol {
+  margin-left: -40px;
+  margin-top: -20px;
+  list-style-position: inside;
+}
+
+/* Element Selector */
+h1 {
+  color:blue
+}
+
+h2{
+  color:blueviolet
+}
+
+h3 {
+  color:bisque
+}
+
+/* Class Selector */
+.red-text{
+  color: red;
+  }
+
+/* ID Selector */
+
+#main{
+  color:red
+}
+
+#sub{
+  color:blueviolet
+}
+
+/* Attribute Selector */
+
+p[draggable="true"]{
+  color:red
+}
+
+/* Universal Selector */
+
+*{
+  color:red
+}
