@@ -8,6 +8,7 @@ import os
 # Scraping Billboard 100
 date = input("Which year do you want to travel to? Type the date in this format YYYY-MM-DD: \n")
 url = f"https://www.billboard.com/charts/hot-100/{date}/"
+
 response = requests.get(url)
 web_page = response.text
 soup = BeautifulSoup(web_page, "html.parser")
