@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+</head>
+<body>
+<!-- to indicate the start and the end of the if/for loop-->
+<!--https://www.npoint.io/-->
+    {% for blog_post in posts: %}
+        {% if blog_post["id"] == 3: %}
+            <h1>{{ blog_post["title"] }}</h1>
+            <h2>{{ blog_post["subtitle"] }}</h2>
+            <h3>{{ blog_post["body"] }}</h3>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>
