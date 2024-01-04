@@ -42,5 +42,10 @@ author varchar(250) NOT NULL -  A field that accepts variable-length Strings up 
                                 
 rating FLOAT NOT NULL -  A field that accepts FLOAT data type numbers, cannot be empty and the field is called rating.                                                                     
 """
-cursor.execute("CREATE TABLE books (id INTEGER PRIMARY KEY, title varchar(250) NOT NULL UNIQUE, author varchar(250) "
-               "NOT NULL, rating FLOAT NOT NULL)")
+# Comment this out after creating the table else it will result in error
+# cursor.execute("CREATE TABLE books (id INTEGER PRIMARY KEY, title varchar(250) NOT NULL UNIQUE, author varchar(250) "
+#                "NOT NULL, rating FLOAT NOT NULL)")
+
+# Use this code to write into the database 
+cursor.execute("INSERT INTO books VALUES(1, 'Harry Potter', 'J. K. Rowling', '9.3')")
+db.commit()
