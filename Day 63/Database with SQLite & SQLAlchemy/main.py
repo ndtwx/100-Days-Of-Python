@@ -73,6 +73,7 @@ def edit():
 def delete():
     book_id = request.args.get('id')
 
+
     # DELETE A RECORD BY ID
     book_to_delete = db.get_or_404(Book, book_id)
     # Alternative way to select the book to delete.
