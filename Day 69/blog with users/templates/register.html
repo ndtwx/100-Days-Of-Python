@@ -1,6 +1,5 @@
-{% from "bootstrap5/form.html" import render_form %}
-{% block content %}
-{% include "header.html" %}
+{% from "bootstrap5/form.html" import render_form %} {% block content %} {%
+include "header.html" %}
 
 <!-- Page Header -->
 <header
@@ -23,8 +22,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-      <!--Rendering the registration form here-->
-      {{render_form(form, novalidate=True, button_map={"submit": "primary"}) }}
+        <!--TODO: render your registration form here-->
       </div>
     </div>
   </div>
